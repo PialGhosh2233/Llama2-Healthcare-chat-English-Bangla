@@ -6,7 +6,9 @@ This repository contains the code and configurations for fine-tuning **LLaMA-2-7
 ---
 #### About the dataset 
 Here is the dataset [Pial2233/Medical-english-bangla-QA](https://huggingface.co/datasets/Pial2233/Medical-english-bangla-QA)
+
 The dataset was created from two dataset [MedQuAD](https://www.kaggle.com/datasets/pythonafroz/medquad-medical-question-answer-for-ai-research) and [doctor_qa_bangla](https://huggingface.co/datasets/shetumohanto/doctor_qa_bangla) 
+
 Dataset making procedure:
 - Took 500 samples from both MedQuaD and doctor_qa_bangla dataset.
 - Merged the samples
