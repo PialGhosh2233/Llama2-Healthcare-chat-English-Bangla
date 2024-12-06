@@ -1,4 +1,4 @@
-**Llama2-Healthcare-chat-English-Bangla**
+**Fine tuned Llama2 for Healthcare Q/A(English and Bangla)**
 
 #### Description:
 This repository contains the code and configurations for fine-tuning **LLaMA-2-7b-chat** on a Bangla-English medical Q&A dataset using QLoRA (Quantized LoRA). The fine-tuned model, **Llama-2-7b-Bangla-HealthcareChat-Finetune**, is optimized to assist in generating accurate and context-aware responses for healthcare-related queries in Bangla and English.
