@@ -34,7 +34,6 @@ Dataset making procedure:
 
 #### Training Highlights:
 - **Efficient Training:** Utilizes QLoRA for memory-efficient fine-tuning on consumer-grade GPUs.
-- **Multilingual Support:** Handles Bangla-English queries with ease, making the model suitable for bilingual healthcare use cases.
 - **Customizable Training:** Easily tweak training settings like batch size, learning rate, and sequence length.
 
 ---
