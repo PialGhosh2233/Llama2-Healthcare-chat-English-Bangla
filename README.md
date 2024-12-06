@@ -4,10 +4,16 @@
 This repository contains the code and configurations for fine-tuning **LLaMA-2-7b-chat** on a Bangla-English medical Q&A dataset using QLoRA (Quantized LoRA). The fine-tuned model, **Llama-2-7b-Bangla-HealthcareChat-Finetune**, is optimized to assist in generating accurate and context-aware responses for healthcare-related queries in Bangla and English.
 
 ---
-
+#### About the dataset 
+Here is the dataset [Pial2233/Medical-english-bangla-QA](https://huggingface.co/datasets/Pial2233/Medical-english-bangla-QA)
+The dataset was created from two dataset [MedQuAD](https://www.kaggle.com/datasets/pythonafroz/medquad-medical-question-answer-for-ai-research) and [doctor_qa_bangla](https://huggingface.co/datasets/shetumohanto/doctor_qa_bangla) 
+Dataset making procedure:
+- Took 500 samples from both MedQuaD and doctor_qa_bangla dataset.
+- Merged the samples
+- Randomly shuffled the samples
+---
 #### Features:
 - **Model Architecture:** LLaMA-2-7b-chat fine-tuned using LoRA for efficient parameter updates.
-- **Dataset:** A Bangla-English medical Q&A dataset taken from [Pial2233/Medical-english-bangla-QA](https://huggingface.co/datasets/Pial2233/Medical-english-bangla-QA).
 - **Low-Rank Adaptation:** LoRA with `r=64`, dropout, and scaled parameters for improved training efficiency.
 - **Quantization:** 4-bit precision (nf4 quantization) for reduced memory usage and accelerated training.
 - **Training Pipeline:** 
@@ -19,7 +25,7 @@ This repository contains the code and configurations for fine-tuning **LLaMA-2-7
 
 #### Requirements:
 - Python 3.8+
-- GPUs with CUDA support (A100 recommended for bf16 training).
+- GPUs with CUDA support.
 - Libraries: `accelerate`, `peft`, `transformers`, `trl`, `bitsandbytes`, and `datasets`.
 
 ---
@@ -31,19 +37,10 @@ This repository contains the code and configurations for fine-tuning **LLaMA-2-7
 
 ---
 
-#### How to Use:
-1. Clone this repository.
-2. Install dependencies using `pip install -r requirements.txt`.
-3. Run the fine-tuning script with your desired configurations.
-4. Use the fine-tuned model for healthcare text generation with the provided inference pipeline.
-
----
-
 #### Applications:
 - Bangla-English conversational agents for healthcare.
-- Medical Q&A systems for localized use.
 - Educational tools for bilingual healthcare training.
 
 ---
 
-Contributions are welcome to improve the model and expand its applications. 🚀
+Contributions are welcome to improve the model. 🚀
